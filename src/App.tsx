@@ -1,35 +1,47 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
+import ProfileCard from './components/ProfileCard';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const profilesData = [
+  { 
+    id: 1, 
+    imageUrl: 'https://avatars.githubusercontent.com/u/121128172?s=400&u=b536899f3c7ac5e37b7a2c49018a0ab0171911ac&v=4', 
+    name: 'Taylanne Castelo Branco Cavalcante', 
+    title: 'Estudante de ciência da computação',
+    github: 'https://github.com/Taylanne02',
+  },
+  {
+    id: 2,
+    imageUrl: '...', 
+    name: 'Marcus Tavares Pires', 
+    title: 'Estudante de ciência da computação',
+    github: 'https://github.com/Taylanne02',
+  },
+  {
+    id: 3,
+    imageUrl: '...', 
+    name: 'Nicollas Souza Rodrigues', 
+    title: 'Estudante de ciência da computação',
+    github: 'https://github.com/Taylanne02',
+  },
+];
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="App">
+      <h1>Exemplo com React</h1>
+      <div className="profiles-container">
+        {profilesData.map(profile => (
+          <ProfileCard
+            key={profile.id}
+            name={profile.name}
+            title={profile.title}
+            imageUrl={profile.imageUrl}
+            github={profile.github}
+          />
+        ))}
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
