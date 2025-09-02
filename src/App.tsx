@@ -12,10 +12,10 @@ function App() {
   },
   {
     id: 2,
-    imageUrl: '...', 
+    imageUrl: 'https://avatars.githubusercontent.com/u/177367303?s=400&u=0ccbd2194c098bf49e2fcfeba35fd60ef2d53b7d&v=4%27', 
     name: 'Marcus Tavares Pires', 
-    title: 'Estudante de ciência da computação',
-    github: 'https://github.com/Taylanne02',
+    title: 'Estudante de engenharia de software',
+    github: 'https://github.com/marcustav',
   },
   {
     id: 3,
