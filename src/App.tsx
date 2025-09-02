@@ -19,10 +19,10 @@ function App() {
   },
   {
     id: 3,
-    imageUrl: '...', 
+    imageUrl: 'https://avatars.githubusercontent.com/u/85763297?v=4', 
     name: 'Nicollas Souza Rodrigues', 
-    title: 'Estudante de ciência da computação',
-    github: 'https://github.com/Taylanne02',
+    title: 'Estudante de engenharia de software',
+    github: 'https://github.com/nicollasszr',
   },
 ];
 
