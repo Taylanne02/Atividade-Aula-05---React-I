@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Exemplo com React</h1>
+      <h1>Integrantes do BuscaMed</h1>
       <div className="profiles-container">
         {profilesData.map(profile => (
           <ProfileCard
