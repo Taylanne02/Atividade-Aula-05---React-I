@@ -99,8 +99,8 @@
 
 /* Imagem do perfil */
 .card-img {
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
   transition: transform 0.3s;
