@@ -21,3 +21,4 @@ interface ProfileCardProps {
   }
   
   export default ProfileCard;
+  
