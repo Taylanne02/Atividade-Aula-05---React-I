@@ -1,5 +1,7 @@
 import './App.css';
 import ProfileCard from './components/ProfileCard';
+import './App.css';
+
 
 function App() {
   const profilesData = [
@@ -45,3 +47,5 @@ function App() {
 }
 
 export default App;
+
+

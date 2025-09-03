@@ -33,10 +33,95 @@
   }
 }
 
+.card h2, 
+.card p {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.card h2:hover,
+.card p:hover {
+  transform: scale(1.1); /* aumenta um pouco */
+  color: #646cff;        /* muda a cor no hover */
+}
+
+
 .card {
   padding: 2em;
 }
 
+
+.card-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid #646cff;
+  border-radius: 50%; 
+  margin-bottom: 10px;
+
+  transition: transform 0.3s ease; /* animação suave */
+}
+
+.card-img:hover {
+  transform: scale(1.1); /* aumenta 10%, como se desse um pulinho */
+}
+
+
+
 .read-the-docs {
   color: #888;
+}
+
+/* App.css */
+
+/* Container dos cards */
+.profiles-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+/* Estilo do card */
+.card {
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #333;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+}
+
+/* Imagem do perfil */
+.card-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.card-img:hover {
+  transform: scale(1.1);
+}
+
+/* Link do GitHub */
+.card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background-color: #333;
+  color: #0475f7;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.card a:hover {
+  background-color: #555;
 }
