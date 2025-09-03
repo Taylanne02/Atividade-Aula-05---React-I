@@ -75,12 +75,13 @@
 
 /* Container dos cards */
 .profiles-container {
-  display: grid;
-  grid-template-columns: 1fr; /* apenas uma coluna */
-  gap: 1.5rem;
-  justify-items: center; /* centraliza os cards */
+  display: flex;           /* ativa o flexbox */
+  flex-direction: row;     /* alinha horizontalmente */
+  gap: 2rem;               /* espaço entre os cards */
+  justify-content: center; /* centraliza os cards horizontalmente */
   padding: 2rem;
 }
+
 
 
 /* Estilo do card */
